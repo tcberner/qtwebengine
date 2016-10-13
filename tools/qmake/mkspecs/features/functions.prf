@@ -57,6 +57,8 @@ defineTest(isPlatformSupported) {
       skipBuild("Qt WebEngine requires an OS X SDK version of 10.10 or newer. Current version is $${WEBENGINE_OSX_SDK_PRODUCT_VERSION}.")
       return(false)
     }
+  } else:freebsd-clang {
+      return (true)
   } else {
     skipBuild("Unknown platform. Qt WebEngine only supports Linux, Windows, and OS X.")
     return(false)
