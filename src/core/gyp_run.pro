@@ -15,6 +15,7 @@ cross_compile {
     linux: include(config/desktop_linux.pri)
     mac: include(config/mac_osx.pri)
     win32: include(config/windows.pri)
+    freebsd: include(config/freebsd.pri)
 }
 GYP_CONFIG += qtwe_process_name_debug=$$QTWEBENGINEPROCESS_NAME_DEBUG
 GYP_CONFIG += qtwe_process_name_release=$$QTWEBENGINEPROCESS_NAME_RELEASE
